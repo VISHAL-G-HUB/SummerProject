@@ -1,0 +1,225 @@
+input{
+    width: 3.3%;
+    height: 6.8%;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: medium;
+    outline: none;
+}
+#a1{
+    position: fixed;
+    top: 67%;
+    left: 30.5%;
+    border: 5px solid violet;
+}
+#a2{
+    position: fixed;
+    top: 75%;
+    left: 30.5%;
+    border: 5px solid red;
+}
+#a3{
+    position: fixed;
+    top: 83%;
+    left: 30.5%;
+    border: 5px solid blue;
+}
+#a4{
+    position: fixed;
+    top: 91%;
+    left: 30.5%;
+    border: 5px solid green;
+} 
+#b1{
+    position: fixed;
+    top: 0%;
+    left: 44%;
+    border: 5px solid violet;
+}
+#b2{
+    position: fixed;
+    top: 8%;
+    left: 44%;
+    border: 5px solid red;
+}
+#b3{
+    position: fixed;
+    top: 16%;
+    left: 44%;
+    border: 5px solid blue;
+}
+#b4{
+    position: fixed;
+    top: 24%;
+    left: 44%;
+    border: 5px solid green;
+} 
+#c1{
+    position: fixed;
+    top: 34%;
+    left: 10%;
+    border: 5px solid violet;
+}
+#c2{
+    position: fixed;
+    top: 34%;
+    left: 15%;
+    border: 5px solid red;
+}
+#c3{
+    position: fixed;
+    top: 34%;
+    left: 20%;
+    border: 5px solid blue;
+}
+#c4{
+    position: fixed;
+    top: 34%;
+    left: 25%;
+    border: 5px solid green;
+} 
+#d1{
+    position: fixed;
+    top: 59%;   
+    left: 50%;
+    border: 5px solid violet;
+}
+#d2{
+    position: fixed;
+    top: 59%;
+    left: 55%;
+    border: 5px solid red;
+}
+#d3{
+    position: fixed;
+    top: 59%;
+    left: 60%;
+    border: 5px solid blue;
+}
+#d4{
+    position: fixed;
+    top: 59%;
+    left: 65%;
+    border: 5px solid green;
+} 
+
+#aa1{
+    position: fixed;
+    top: 67%;
+    left: 35%;
+    border: 5px solid violet;
+}
+#aa2{
+    position: fixed;
+    top: 75%;
+    left: 35%;
+    border: 5px solid red;
+}
+#aa3{
+    position: fixed;
+    top: 83%;
+    left: 35%;
+    border: 5px solid blue;
+}
+#aa4{
+    position: fixed;
+    top: 91%;
+    left: 35%;
+    border: 5px solid green;
+} 
+#bb1{
+    position: fixed;
+    top: 0%;
+    left: 39.5%;
+    border: 5px solid violet;
+}
+#bb2{
+    position: fixed;
+    top: 8%;
+    left: 39.5%;
+    border: 5px solid red;
+}
+#bb3{
+    position: fixed;
+    top: 16%;
+    left: 39.5%;
+    border: 5px solid blue;
+}
+#bb4{
+    position: fixed;
+    top: 24%;
+    left: 39.5%;
+    border: 5px solid green;
+} 
+#cc1{
+    position: fixed;
+    top: 42.5%;
+    left: 10%;
+    border: 5px solid violet;
+}
+#cc2{
+    position: fixed;
+    top: 42.5%;
+    left: 15%;
+    border: 5px solid red;
+}
+#cc3{
+    position: fixed;
+    top: 42.5%;
+    left: 20%;
+    border: 5px solid blue;
+}
+#cc4{
+    position: fixed;
+    top: 42.5%;
+    left: 25%;
+    border: 5px solid green;
+} 
+#dd1{
+    position: fixed;
+    top: 51%;   
+    left: 50%;
+    border: 5px solid violet;
+}
+#dd2{
+    position: fixed;
+    top: 51%;
+    left: 55%;
+    border: 5px solid red;
+}
+#dd3{
+    position: fixed;
+    top: 51%;
+    left: 60%;
+    border: 5px solid blue;
+}
+#dd4{
+    position: fixed;
+    top: 51%;
+    left: 65%;
+    border: 5px solid green;
+}
+#idx1{
+    position: fixed;
+    top: 67%;
+    left: 73.5%;
+    border: 5px solid violet;
+}
+#idx2{
+    position: fixed;
+    top: 75%;
+    left: 73.5%;
+    border: 5px solid red;
+}
+#idx3{
+    position: fixed;
+    top: 83%;
+    left: 73.5%;
+    border: 5px solid blue;
+}
+#idx4{
+    position: fixed;
+    top: 91%;
+    left: 73.5%;
+    border: 5px solid green;
+} 

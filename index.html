@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Timing</title>
+    <link rel='stylesheet' href="new.css">
+    <link rel='stylesheet' href="newbox.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+    <link rel="stylesheet" href="traffic_light.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="calculate()">
+    <div id="first">
+        <hr id="line1" class="line">
+        <hr id="dash1" class="dash">
+        <hr id="dash2" class="dash">
+    </div>
+
+    <div id="second">
+        <hr id="line2" class="line">
+        <hr id="dash3" class="dash">
+        <hr id="dash4" class="dash">
+    </div>
+    <div id="third">
+        <p id="dirA">A</p>
+        <p id="dirB">B</p>
+        <p id="dirC">C</p>
+        <p id="dirD">D</p>
+    </div>
+
+    <div class="container" id="A">
+        <div class="circle circleA red" id="a" color="red"></div>
+    </div>
+    <div class="container" id="B">
+        <div class="circle circleB red" id="b" color="red"></div>
+    </div>
+    <div class="container" id="C">
+        <div class="circle circleC red" id="c" color="red"></div>
+    </div>
+    <div class="container" id="D">
+        <div class="circle circleD red" id="d" color="red"></div>
+    </div>
+
+    <div>
+        <input type="text" min="0" id="a1"> <input type="text" min="0" id="a2"> <input type="text" min="0" id="a3">
+        <input type="text" min="0" id="a4">
+        <input type="text" min="0" id="b1"> <input type="text" min="0" id="b2"> <input type="text" min="0" id="b3">
+        <input type="text" min="0" id="b4">
+        <input type="text" min="0" id="c1"> <input type="text" min="0" id="c2"> <input type="text" min="0" id="c3">
+        <input type="text" min="0" id="c4">
+        <input type="text" min="0" id="d1"> <input type="text" min="0" id="d2"> <input type="text" min="0" id="d3">
+        <input type="text" min="0" id="d4">
+        <input type="text" min="0" id="aa1"> <input type="text" min="0" id="aa2"> <input type="text" min="0" id="aa3">
+        <input type="text" min="0" id="aa4">
+        <input type="text" min="0" id="bb1"> <input type="text" min="0" id="bb2"> <input type="text" min="0" id="bb3">
+        <input type="text" min="0" id="bb4">
+        <input type="text" min="0" id="cc1"> <input type="text" min="0" id="cc2"> <input type="text" min="0" id="cc3">
+        <input type="text" min="0" id="cc4">
+        <input type="text" min="0" id="dd1"> <input type="text" min="0" id="dd2"> <input type="text" min="0" id="dd3">
+        <input type="text" min="0" id="dd4">
+        <input type="text" value=" 2W" min="0" id="idx1" disabled>
+        <input type="text" value=" 3W" min="0" id="idx2" disabled>
+        <input type="text" value="LCV" min="0" id="idx3" disabled>
+        <input type="text" value="Bus" min="0" id="idx4" disabled>
+
+        <div id="hh">
+            <label for="h" style="font-size: 25px"> <b>Headway:</b> </label>
+            <input type="number" id="h" value="2.3">
+            <input type="text" id="unit" value="sec" disabled>
+        </div>
+        <div id="ll">
+            <label for="lost" style="font-size: 25px"> <b>Lost Time:</b> </label>
+            <input type="number" id="lost" value="3">
+            <input type="text" id="unit1" value="sec" disabled>
+        </div>
+        <div id="int">
+            <label for="in" style="font-size: 25px"> <b>Location:</b> </label>
+            <!-- <input type="text" id="in" value="InterSection-1"> -->
+            <select id="in">
+                <option value="InterSection-1">InterSection-1</option>
+                <option value="InterSection-2">InterSection-2</option>
+                <option value="InterSection-3">InterSection-3</option>
+              </select>
+        </div>
+
+        <input id="ta" value="0" style="text-align: center;" disabled>
+        <input id="tb" value="0" style="text-align: center;" disabled>
+        <input id="tc" value="0" style="text-align: center;" disabled>
+        <input id="td" value="0" style="text-align: center;" disabled>
+    </div>
+
+
+    <div id="side">
+        <h1 >Flow: </h1>
+        <div id="fa">
+            <label for="fA" style="font-size: 25px">Flow (A):</label>
+            <input type="text" id="fA" disabled>
+        </div>
+        <div id="fb">
+            <label for="fB" style="font-size: 25px">Flow (B):</label>
+            <input type="text" id="fB" disabled>
+        </div>
+        <div id="fc">
+            <label for="fC" style="font-size: 25px">Flow (C):</label>
+            <input type="text" id="fC" disabled>
+        </div>
+        <div id="fd">
+            <label for="fD" style="font-size: 25px">Flow (D):</label>
+            <input type="text" id="fD" disabled>
+        </div>
+
+        <h1 style="margin-top: 30px">Effective Green Time: </h1>
+        <div id="ga">
+            <label for="gA" style="font-size: 25px">Green Time (A):</label>
+            <input type="text" id="gA" disabled>
+        </div>
+        <div id="gb">
+            <label for="gB" style="font-size: 25px">Green Time (B):</label>
+            <input type="text" id="gB" disabled>
+        </div>
+        <div id="gc">
+            <label for="gC" style="font-size: 25px">Green Time (C):</label>
+            <input type="text" id="gC" disabled>
+        </div>
+        <div id="gd">
+            <label for="gD" style="font-size: 25px">Green Time (D):</label>
+            <input type="text" id="gD" disabled>
+        </div>
+
+
+        <h1 style="margin-top: 30px ">Avarage Delay: </h1>
+        <div id="da">
+            <label for="dA" style="font-size: 25px">Delay (A):</label>
+            <input type="text" id="dA" disabled>
+        </div>
+        <div id="db">
+            <label for="dB" style="font-size: 25px">Delay (B):</label>
+            <input type="text" id="dB" disabled>
+        </div>
+        <div id="dc">
+            <label for="dC" style="font-size: 25px">Delay (C):</label>
+            <input type="text" id="dC" disabled>
+        </div>
+        <div id="dd">
+            <label for="dD" style="font-size: 25px">Delay (D):</label>
+            <input type="text" id="dD" disabled>
+        </div>
+    </div>
+
+    <button id="btn" onclick="submitResult(),stop(), calculate()">Set values</button>
+    <p id="manu">For Manual </p>
+    <a href="#" >click here!</a>
+    <script src="cal.js"></script>
+</body>
+
+</html>

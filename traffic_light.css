@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+#A,#B,#C,#D {
+	background-color: #2c3e50;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 15px 0;
+	height: 200/3px;
+	width: 70px;
+}
+#A{
+    position: fixed;
+    top: 67%;
+    left: 25%;
+}
+#B{
+    position: fixed;
+    top: 21%;
+    left: 49%;
+}
+#C{
+    position: fixed;
+    top: 21%;
+    left: 25%;
+}
+#D{
+    position: fixed;
+    top: 67%;
+    left: 49%;
+}
+
+.circle {
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 100%;
+	position: relative;
+	height: 40px;
+	width: 40px;
+}
+
+#a,#b,#c,#d{
+    background-color: red;
+}
+#ta,#tb,#tc,#td{
+    background: transparent;
+    font-size: 35px;
+    font-family: 'Work Sans', sans-serif;
+    border: none;
+    color: red;
+}
+#ta{
+    position: fixed;
+    top: 68.5%;
+    left: 21%;
+}
+#tb{
+    position: fixed;
+    top: 22.5%;
+    left: 54%;
+}
+#tc{
+    position: fixed;
+    top: 22.5%;
+    left: 21%;
+}
+#td{
+    position: fixed;
+    top: 68.5%;
+    left: 54%;
+}
