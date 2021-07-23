@@ -61,7 +61,7 @@ const submitResult = async () => {
     };
     console.log(JSON.stringify(v));
     try {
-      const response = await fetch('http://localhost:3000/posts/send', {
+      const response = await fetch('https://dry-lake-43219.herokuapp.com/posts/send', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
